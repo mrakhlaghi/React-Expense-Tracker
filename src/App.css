@@ -2,48 +2,69 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: #f6f6f6;
-  color: #0d1d2c;
-  padding-top: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  overflow: hidden;
+  color: rgb(108 68 170);
   font-family: 'Montserrat', sans-serif;
 }
 
-.topSection{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
 .container{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding: 19px 19px 30px 19px  ;
+  width: 330px;
+  min-height: 400px;
+  
+}
+.topSection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 300px;
-  background-color: #fff;
-  padding: 10px; 
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.balance{
+  width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis ;
 }
 .result-section{
+  width: 285px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 17px;
 }
 .expenseBox{
 width: 135px;
 height: 60px;
-padding: 5px 10px ;
+padding: 7px 14px ;
+background-color: rgb(248 248 248 / 57%);
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
 border-radius: 5px;
-border: 1px solid #ccc;
 }
 .expenseBox span {
   color: green;
   font-weight: bold;
+  width: 115px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis ;
 }
 
 .btn{
@@ -72,11 +93,18 @@ border: 1px solid #ccc;
   min-height: 200px;
   justify-content: space-around;
   margin-bottom: 30px;
-  /* background-color: #cd2d2d; */
 }
+.form_transaction{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
 input{
-  border: 1px solid #ccc;
-  padding: 10px 12px;
+  border: 1px solid rgb(108 68 170);
+  padding: 7px 12px;
+  color: rgb(108 68 170);
   outline: none;
   border-radius: 5px ;
 }
@@ -99,32 +127,66 @@ input[type='radio']{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 300px;
 }
 .empty{
   display: flex;
   justify-content: center;
   margin: 15px 0; 
 }
-.transaction{
-  display: flex;
-  justify-content: space-between;
- background-color: #f4f4f5;
- padding: 5px 10px ;
- border-radius: 5px;
- font-weight: bold;
- margin-top: 15px;
-border-right: 4px solid green;
-}
 input.search{
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid #e1d8ea;
   border-radius: 5px;
   padding: 10px 12px;
-  background-color: #efefef;
-  width: 100%;
+  background-color: #f1ecf3;
+  width: 80%;
+  height: 33px;
+  align-self: center;
   margin: 20px 0;
 }
 
-/* .trash{
-  
-} */
+input.search:focus{
+  border: 1px solid rgb(108 68 170);;
+}
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248 248 248 / 57%);
+  padding: 5px 10px ;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 15px;
+  border-right: 4px solid green;
+}
+.trx-name{
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis ;
+}
+.trx-amount{
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis ;
+}
+
+@media  screen and (min-width: 640px) {
+  .container {
+      width: 600px;
+  }
+  .topSection{
+      width: 370px;
+  }
+  .balance{
+    width: 200px;
+  }
+  .result-section{
+    width: 360px;
+  }
+  .transactions{
+    width: 450px;
+  }
+}

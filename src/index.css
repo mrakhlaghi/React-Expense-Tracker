@@ -22,3 +22,15 @@ code {
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  background: #D3CCE3; 
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); 
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+}

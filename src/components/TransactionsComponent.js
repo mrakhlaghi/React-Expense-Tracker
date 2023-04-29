@@ -46,10 +46,10 @@ const TransactionsComponent = (props) => {
           <div
             key={t.id}
             className="transaction"
-            style={{ borderRight: t.type === "expense" && "4px solid red" }}
+            style={{ borderRight: t.type === "expense" && "4px solid #eb3b3b" }}
           >
-            <span>{t.desc}</span>
-            <span>${t.amount}</span>
+            <div className="trx-name" >{t.desc}</div>
+            <div className="trx-amount" > $ {t.amount}</div>
           </div>
         ))
       ) : (
