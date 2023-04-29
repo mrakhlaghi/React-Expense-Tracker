@@ -1,0 +1,130 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f6f6;
+  color: #0d1d2c;
+  padding-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  padding: 10px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.result-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expenseBox{
+width: 135px;
+height: 60px;
+padding: 5px 10px ;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+.expenseBox span {
+  color: green;
+  font-weight: bold;
+}
+
+.btn{
+  outline: none;
+  padding: 5px 10px ;
+  background-color: #ede9fe;
+  color:#6d28d9 ;
+  border-radius: 5px;
+  border: 1px solid #6d28d9;
+}
+.primary{
+  color: #fff;
+  background-color: #6d28d9;
+  border: none;
+  padding: 8px 10px ;
+}
+.cancel{
+  background-color: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
+
+.form { 
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  /* background-color: #cd2d2d; */
+}
+input{
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 5px ;
+}
+input[type='radio']{
+  margin-left: 10px;
+  background-color: #c92d2d;
+}
+.radioBox{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+
+.radioBox label{
+  margin-left: 3px;
+  font-size: 12px;
+}
+.transactions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.empty{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0; 
+}
+.transaction{
+  display: flex;
+  justify-content: space-between;
+ background-color: #f4f4f5;
+ padding: 5px 10px ;
+ border-radius: 5px;
+ font-weight: bold;
+ margin-top: 15px;
+border-right: 4px solid green;
+}
+input.search{
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 12px;
+  background-color: #efefef;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* .trash{
+  
+} */
