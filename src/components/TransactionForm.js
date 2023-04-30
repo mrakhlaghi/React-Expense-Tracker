@@ -9,11 +9,12 @@ const TransactionForm = ({ addTransaction, setIsShow }) => {
 
   const changeHandler = (e) => {
     // console.log(e.target);
+    // console.log(e.target.name,e.target.value );
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(e);
+    // console.log(e);
     addTransaction(formValues);
     // setIsShow((isShow)=>!isShow)
     setIsShow(false);

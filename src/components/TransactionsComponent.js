@@ -9,10 +9,10 @@ const TransactionsComponent = (props) => {
     filterTransactions(searchItem);
   }, [props.transactions]);
 
-  console.log(filteredTxns);
+  // console.log(filteredTxns);
 
   const filterTransactions = (search) => {
-    console.log(search);
+    // console.log(search);
     if (!search || search === "") {
       setFilteredTxns(props.transactions);
       return;
@@ -48,8 +48,12 @@ const TransactionsComponent = (props) => {
             className="transaction"
             style={{ borderRight: t.type === "expense" && "4px solid #eb3b3b" }}
           >
-            <div className="trx-name" >{t.desc}</div>
-            <div className="trx-amount" > $ {t.amount}</div>
+            <div className="trx-name">{t.desc}</div>
+            <div className="trx-amount"> $ {t.amount}</div>
+
+            <span className="deleteBtn" onClick={() => props.onDelete(t.id)}>
+              <i className="fa-regular fa-trash-can"></i>
+            </span>
           </div>
         ))
       ) : (
@@ -60,6 +64,8 @@ const TransactionsComponent = (props) => {
 };
 
 export default TransactionsComponent;
+
+//  another way
 
 // {props.transactions.length? filteredTxns.length ? searchItem ?( filteredTxns.map((t) => (
 //   <div
