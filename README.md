@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+# Live and Deployed version 
+https://6460b88bdb1c456baf9b799a--frabjous-souffle-657767.netlify.app/
+
+![Preview Expense Tracker App](https://github.com/mrakhlaghi/React-Expense-Tracker/assets/103969331/db9524aa-0d8a-46c7-9d2c-09d00e48d952)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
