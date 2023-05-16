@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-# Live and Deployed version [here](https://6460b88bdb1c456baf9b799a--frabjous-souffle-657767.netlify.app/)
+# Live and Deployed version [here](https://mr-akhlaghi-react-expense-tracker.netlify.app/)
 
 
 
